@@ -211,10 +211,10 @@ RectTransform:
   m_Father: {fileID: 1471873681}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 374, y: -65}
-  m_SizeDelta: {x: 142, y: 142}
+  m_AnchorMin: {x: 0.61125004, y: 0.35825002}
+  m_AnchorMax: {x: 0.70375, y: 0.54166675}
+  m_AnchoredPosition: {x: 3, y: 4}
+  m_SizeDelta: {x: 6, y: -8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &429925902
 Animator:
@@ -320,10 +320,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 800, y: 480}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -410,7 +410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3710d1e430f71146a4fa01f0b803ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: credits
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -576,10 +575,10 @@ RectTransform:
   m_Father: {fileID: 1471873681}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 217}
-  m_SizeDelta: {x: 640, y: 480}
+  m_AnchorMin: {x: 0.32375002, y: 0.5}
+  m_AnchorMax: {x: 0.7225, y: 1}
+  m_AnchoredPosition: {x: -0.5, y: 2}
+  m_SizeDelta: {x: 1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1566476605
 MonoBehaviour:
@@ -652,10 +651,10 @@ RectTransform:
   m_Father: {fileID: 1471873681}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 665, y: -219}
-  m_SizeDelta: {x: 320, y: 160}
+  m_AnchorMin: {x: 0.76875, y: 0.09141667}
+  m_AnchorMax: {x: 0.96375, y: 0.26041666}
+  m_AnchoredPosition: {x: -2, y: -0.5}
+  m_SizeDelta: {x: 4, y: -1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1647285866
 Animator:

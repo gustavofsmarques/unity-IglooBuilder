@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
-    string name = "credits";
+    private new readonly string name = "credits";
     public void ChangeScene()
     {
         SceneManager.LoadScene(name);
