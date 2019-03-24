@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameEvent/Scenes/credits.unity
     guid: 7936293ec90779f45a9c69f4c580cb07
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/specialThanks.unity
+    guid: 76c0123b2fb220840a80e027ace6b8ef
   m_configObjects: {}

@@ -14,12 +14,12 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Ice Corp.
   productName: Igloo Builder
-  defaultCursor: {fileID: 2800000, guid: 70a9ca8c3252f344095e4c052290a702, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
-  m_SplashScreenOverlayOpacity: 1
+  m_SplashScreenOverlayOpacity: 0.891
   m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 0
   m_SplashScreenDrawMode: 1
@@ -42,9 +42,9 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: ae3950f4114c3f54b8a3c3bf97cfc208, type: 3}
     duration: 2
-  - logo: {fileID: 21300000, guid: 714c87264f7ddc94cb08fed9b49f1095, type: 3}
+  - logo: {fileID: 21300000, guid: bba5cd120fb50b04f9b1af9a2a5b50f5, type: 3}
     duration: 2
-  - logo: {fileID: 21300000, guid: 3c08219561518c042be0b68137063bf6, type: 3}
+  - logo: {fileID: 21300000, guid: 76a37b9f9948f604f8b5ae3c2f1431c2, type: 3}
     duration: 2
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
@@ -126,7 +126,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 0.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -245,6 +245,7 @@ PlayerSettings:
   tvOSManualSigningProvisioningProfileType: 0
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
+  iOSAutomaticallyDetectAndAddCapabilities: 1
   appleEnableProMotion: 0
   clonedFromGUID: 5f34be1353de5cf4398729fda238591b
   templatePackageId: com.unity.template.2d@1.3.0
@@ -270,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 70a9ca8c3252f344095e4c052290a702, type: 3}
+      m_Icon: {fileID: 2800000, guid: 8da2ab7190cefef43a65707e89e76333, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
