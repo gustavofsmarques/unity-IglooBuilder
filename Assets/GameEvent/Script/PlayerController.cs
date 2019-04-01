@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Movemente Variable
+    
     public float maxSpeed;
+
 
     //Jump Variable
     bool grounded = false;
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-
+        
         if (grounded && Input.GetAxis("Jump") > 0)
         {
 
@@ -76,17 +78,39 @@ public class PlayerController : MonoBehaviour
 
             flip();
 
+
+
+
         }
 
 
+
+        void flip()
+        {
+            facingRight = !facingRight;
+            Vector3 theScale = transform.localScale;
+            transform.localScale = theScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+
+        }
     }
 
-    void flip()
+    void OnCollisionEnter2D(Collision2D other)
     {
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        transform.localScale = theScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        if (other.transform.tag == "MovingPlatform")
+        {
+            transform.parent = other.transform;
+        }
+
+    }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.transform.tag == "MovingPlatform")
+        {
+            transform.parent = null;
+        }
+
     }
 }
