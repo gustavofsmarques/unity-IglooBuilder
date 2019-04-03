@@ -10,7 +10,7 @@ public class Death : MonoBehaviour
     [SerializeField] private Transform respawnPoint;
     [SerializeField] private GameObject gameoverUI;
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
@@ -20,5 +20,5 @@ public class Death : MonoBehaviour
 
     }
 
-   
+
 }
