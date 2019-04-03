@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
 
 
+    [SerializeField] private GameObject gameoverUI;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,10 +79,6 @@ public class PlayerController : MonoBehaviour
         {
 
             flip();
-
-
-
-
         }
 
 
@@ -96,12 +94,23 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.tag == "Death")
+        {
+            gameObject.SetActive(false);
+            gameoverUI.SetActive(true);
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.transform.tag == "MovingPlatform")
         {
             transform.parent = other.transform;
         }
+
+       
 
     }
 

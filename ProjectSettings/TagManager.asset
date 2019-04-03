@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MovingPlatform
   - Death
+  - GameOver
+  - LimitObject
   layers:
   - Default
   - TransparentFX

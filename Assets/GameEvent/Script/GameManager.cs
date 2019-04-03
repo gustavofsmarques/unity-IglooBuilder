@@ -4,27 +4,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject snowBall;
-    private Vector3 snowBallPos;
+    public GameObject objectSpawner;//reference to our enemy spawner 
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        objectSpawner.GetComponent<SpawnObject>().ScheduleObjectSpawner();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        StartCoroutine("CreatwSnowBall", 2.0f);
+        //start enemy spawner
+       
+
     }
 
-    IEnumerator CreatwSnowBall()
-    {
-        yield return new WaitForSeconds(1);
-        float x = Random.Range(-50f, 50f);
-        float y = 30f;
-        snowBallPos = new Vector3(x, y, 0f);
-        Instantiate(snowBall, snowBallPos, Quaternion.identity);
-    }
+   
 }
