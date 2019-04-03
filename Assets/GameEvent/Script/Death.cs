@@ -7,8 +7,9 @@ public class Death : MonoBehaviour
 {
 
     [SerializeField] private Transform player;
-    [SerializeField] private Transform respawnPoint;
     [SerializeField] private GameObject gameoverUI;
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
