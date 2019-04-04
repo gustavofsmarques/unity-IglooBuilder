@@ -8,6 +8,7 @@ TagManager:
   - Death
   - GameOver
   - LimitObject
+  - Play
   layers:
   - Default
   - TransparentFX

@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_ONE.unity
+    guid: ef9ec7e62172f73468734ea3582bd5bd
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_TWO.unity
+    guid: 8c9caabea1ff27a49a504d6eaddbc359
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_THREE.unity
+    guid: a9bae25947b32b348b61385561134c59
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_FOUR.unity
+    guid: 3ef768b08f276c04c95dff6c402b5588
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_FIVE.unity
+    guid: 2a83a5636ce094b48beb50a95e976a0e
+  - enabled: 1
+    path: Assets/GameEvent/Scenes/Story/Story_SIX.unity
+    guid: 5e1c57e01dcf61645846bdb9e23c8788
+  - enabled: 1
     path: Assets/GameEvent/Scenes/menu.unity
     guid: 6c9496bfd0666ae48aadd34b2780bb6f
   - enabled: 1
