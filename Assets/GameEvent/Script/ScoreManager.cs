@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
 
     public GameObject[] iglooParts;
-    public int score;
+    public int score = 0;
+    public GameObject ready;
+    public Text scoretxt;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +22,16 @@ public class ScoreManager : MonoBehaviour
     {
         for(int i=0 ; i < iglooParts.Length; i++)
         {
-            if (score > i * 1) {
+            if (score > i) {
                 iglooParts[i].SetActive(true);
-            }
-            
+            }  
         }
+        if(score >= iglooParts.Length)
+        {
+            ready.SetActive(true);
+        }
+        scoretxt.text = score.ToString();
     }
+
+
 }

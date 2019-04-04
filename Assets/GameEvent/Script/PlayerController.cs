@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public float jumpHeight;
 
-
+    [SerializeField] private GameObject buttonsUI;
     [SerializeField] private GameObject gameoverUI;
 
     // Start is called before the first frame update
@@ -37,7 +38,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         
-        if (grounded && Input.GetAxis("Jump") > 0)
+
+
+        if (grounded && CrossPlatformInputManager.GetAxis("Jump") > 0)
         {
 
             grounded = false;
@@ -61,7 +64,7 @@ public class PlayerController : MonoBehaviour
         myAnimTD.SetFloat("verticalSpeed", myRB.velocity.y);
 
 
-        float move = Input.GetAxis("Horizontal");
+        float move = CrossPlatformInputManager.GetAxis("Horizontal");
         myAnimTD.SetFloat("speed", Mathf.Abs(move));
 
         myRB.velocity = new Vector2(move * maxSpeed, myRB.velocity.y);
@@ -98,6 +101,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.transform.tag == "Death")
         {
+            buttonsUI.SetActive(false);          
             gameObject.SetActive(false);
             gameoverUI.SetActive(true);
         }
