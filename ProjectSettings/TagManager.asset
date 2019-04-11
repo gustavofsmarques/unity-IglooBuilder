@@ -9,6 +9,7 @@ TagManager:
   - GameOver
   - LimitObject
   - Play
+  - Button
   layers:
   - Default
   - TransparentFX

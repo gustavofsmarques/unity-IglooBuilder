@@ -9,7 +9,6 @@ public class ScoreManager : MonoBehaviour
     public GameObject[] iglooParts;
     public int score = 0;
     public GameObject ready;
-    public Text scoretxt;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +29,7 @@ public class ScoreManager : MonoBehaviour
         {
             ready.SetActive(true);
         }
-        scoretxt.text = score.ToString();
+        
     }
 
 
