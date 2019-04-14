@@ -7314,7 +7314,7 @@ GameObject:
   - component: {fileID: 436289177}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7379,7 +7379,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 808815990}
+      - m_Target: {fileID: 808815989}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -8509,6 +8509,7 @@ RectTransform:
   - {fileID: 810799430}
   - {fileID: 436289176}
   - {fileID: 1288754892}
+  - {fileID: 1059625636}
   m_Father: {fileID: 896923645}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8591,7 +8592,6 @@ MonoBehaviour:
   - {fileID: 1529273026}
   score: 0
   ready: {fileID: 1348870565}
-  scoretxt: {fileID: 1288754893}
 --- !u!4 &650015304
 Transform:
   m_ObjectHideFlags: 0
@@ -9606,7 +9606,7 @@ GameObject:
   - component: {fileID: 808815986}
   - component: {fileID: 808815985}
   - component: {fileID: 808815988}
-  - component: {fileID: 808815990}
+  - component: {fileID: 808815989}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9715,7 +9715,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamActivatedEvent, Cinemachine, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &808815990
+--- !u!114 &808815989
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9741,7 +9741,7 @@ GameObject:
   - component: {fileID: 810799431}
   m_Layer: 5
   m_Name: Restart
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9806,7 +9806,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 808815990}
+      - m_Target: {fileID: 808815989}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -11495,6 +11495,85 @@ SpriteShapeRenderer:
   m_LocalAABB:
     m_Center: {x: 0, y: 1.7673098, z: -0.0005}
     m_Extent: {x: 2, y: 0.7673098, z: 0.0005}
+--- !u!1 &1059625635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059625636}
+  - component: {fileID: 1059625638}
+  - component: {fileID: 1059625637}
+  m_Layer: 5
+  m_Name: BestSC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1059625636
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059625635}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 643734367}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 54.3}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1059625637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059625635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 08465d34b31898545a61cce3254fdf8b, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Best Score
+--- !u!222 &1059625638
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059625635}
+  m_CullTransparentMesh: 0
 --- !u!1 &1067222160
 GameObject:
   m_ObjectHideFlags: 0
@@ -14289,7 +14368,7 @@ GameObject:
   - component: {fileID: 1529273029}
   - component: {fileID: 1529273030}
   m_Layer: 0
-  m_Name: pixil-layer-Entry
+  m_Name: iglooEntry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14396,6 +14475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newLevel: GamePlay
+  iglooEntry: {fileID: 1529273026}
+  scoretxt: {fileID: 1288754893}
 --- !u!1 &1531782872
 GameObject:
   m_ObjectHideFlags: 0
