@@ -17,7 +17,7 @@ MonoBehaviour:
     m_End: 22.5
     m_Order: 7
     m_Sprites:
-    - {fileID: 21300000, guid: 0656691f12b44a94980f055665a8d19f, type: 3}
+    - {fileID: 21300000, guid: 7c9b37b6301062c479a1901ccc76b62d, type: 3}
   - m_Start: 22.5
     m_End: 67.5
     m_Order: 6
@@ -72,9 +72,5 @@ MonoBehaviour:
   - m_CornerType: 7
     m_Sprites:
     - {fileID: 0}
-  m_FillPixelPerUnit: 100
-  m_BevelSize: 0
-  m_BevelCutoff: 0
   m_FillOffset: 0
-  m_WorldSpaceUV: 0
   m_UseSpriteBorders: 1
