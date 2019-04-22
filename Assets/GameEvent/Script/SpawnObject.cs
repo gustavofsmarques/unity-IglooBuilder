@@ -47,7 +47,7 @@ public class SpawnObject : MonoBehaviour
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
 
         //This is the top-right point of the screen
-        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 0.10f));
+        Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(1, 0.25f));
 
         //Instantiate an enemy
         GameObject anObject = (GameObject)Instantiate(platform);

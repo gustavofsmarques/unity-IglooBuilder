@@ -37,7 +37,7 @@ public class MovingPlataform : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
-            Destroy(gameObject,1f);
+            Destroy(gameObject,0.25f);
         }
     }
 }
