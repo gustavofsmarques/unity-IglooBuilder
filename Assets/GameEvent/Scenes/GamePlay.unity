@@ -704,7 +704,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -730,7 +730,7 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
@@ -6578,9 +6578,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iglooParts:
+  - {fileID: 1470739548}
   - {fileID: 2053386972}
+  - {fileID: 1190768123}
   - {fileID: 183264336}
+  - {fileID: 1259203346}
   - {fileID: 1831514707}
+  - {fileID: 1564898206}
+  - {fileID: 1495617033}
+  - {fileID: 1194682889}
   - {fileID: 1529273026}
   score: 0
   ready: {fileID: 1348870565}
@@ -7265,13 +7271,13 @@ GameObject:
   - component: {fileID: 827245995}
   - component: {fileID: 827245999}
   - component: {fileID: 827245998}
-  - component: {fileID: 827245997}
   - component: {fileID: 827245996}
   - component: {fileID: 827246000}
+  - component: {fileID: 827246001}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -7309,22 +7315,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &827245997
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827245994}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.12, y: -0.69}
-  serializedVersion: 2
-  m_Radius: 0.28
 --- !u!50 &827245998
 Rigidbody2D:
   serializedVersion: 4
@@ -7414,6 +7404,71 @@ MonoBehaviour:
   jumpHeight: 200
   buttonsUI: {fileID: 1194784732}
   gameoverUI: {fileID: 643734366}
+--- !u!60 &827246001
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827245994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.92}
+    newSize: {x: 1.92, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13, y: -0.53999996}
+      - {x: 0.13, y: -0.96}
+      - {x: 0.41, y: -0.96}
+      - {x: 0.41, y: -0.89}
+      - {x: 0.37, y: -0.84999996}
+      - {x: 0.29, y: -0.82}
+      - {x: 0.33497643, y: -0.52707386}
+      - {x: 0.38, y: -0.21}
+      - {x: 0.35, y: -0.06}
+      - {x: 0.32, y: 0.01}
+      - {x: 0.29999998, y: 0.12}
+      - {x: 0.37, y: 0.17}
+      - {x: 0.31770515, y: 0.3000002}
+      - {x: 0.28, y: 0.47}
+      - {x: 0.35, y: 0.59}
+      - {x: 0.27289748, y: 0.6685991}
+      - {x: 0.2577057, y: 0.7788534}
+      - {x: 0.16441727, y: 0.8162737}
+      - {x: 0.099999994, y: 0.84999996}
+      - {x: 0.049999997, y: 0.85999995}
+      - {x: -0.06, y: 0.85999995}
+      - {x: -0.12244487, y: 0.7535572}
+      - {x: -0.16333258, y: 0.71149254}
+      - {x: -0.17427361, y: 0.6255894}
+      - {x: -0.19087625, y: 0.5925331}
+      - {x: -0.16466928, y: 0.5287218}
+      - {x: -0.20622265, y: 0.38179207}
+      - {x: -0.1969353, y: 0.3651018}
+      - {x: -0.16541052, y: 0.3552456}
+      - {x: -0.14655793, y: 0.2740984}
+      - {x: -0.10990727, y: 0.22266102}
+      - {x: -0.12391317, y: 0.12601757}
+      - {x: -0.17999999, y: -0.11}
+      - {x: -0.17, y: -0.24}
+      - {x: -0.14, y: -0.26}
+      - {x: -0.14, y: -0.96}
+      - {x: 0.08, y: -0.96}
+      - {x: 0.089999996, y: -0.89}
+      - {x: 0.03, y: -0.69}
+      - {x: 0.049999997, y: -0.66999996}
 --- !u!1 &840157874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,7 +10128,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -10099,7 +10154,7 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
