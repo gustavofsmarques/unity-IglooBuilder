@@ -7,7 +7,7 @@ public class IglooPoint : MonoBehaviour
 {
 
     [SerializeField] private string newLevel;
-    static int score = 0;
+    private static int score = 0;
     public GameObject iglooEntry;
     public Text scoretxt;
 
@@ -31,5 +31,9 @@ public class IglooPoint : MonoBehaviour
     void Update()
     { 
         scoretxt.text = score.ToString();   
+    }
+    public void ResetScore()
+    {
+        score = 0;
     }
 }
