@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour {
 
-    
 
+    public GameObject desmute ,MuteSound, soundManager;
     public static SoundManager instance = null;     //Allows other scripts to call functions from SoundManager.             
     public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
     public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
@@ -23,8 +23,20 @@ public class SoundManager : MonoBehaviour {
 
     public bool story;
     public bool menu;
-    public bool game
-        ;
+    public bool game;
+
+
+    public void mute()
+    {
+        MuteSound.SetActive(true);
+        soundManager.SetActive(false);
+    }
+
+    public void desMute()
+    {
+        desmute.SetActive(true);
+        soundManager.SetActive(true);
+    }
 
     void Awake()
     {
@@ -41,6 +53,7 @@ public class SoundManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+  
 
     private void Update()
     {
@@ -114,5 +127,6 @@ public class SoundManager : MonoBehaviour {
         //Play the clip.
         efxSource.Play();
     }
+
 }
 

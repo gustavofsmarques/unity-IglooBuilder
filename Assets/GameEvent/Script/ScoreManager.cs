@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i=0 ; i < iglooParts.Length; i++)
+        for(int i=0 ; i <= iglooParts.Length; i++)
         {
             if (score > i) {
                 iglooParts[i].SetActive(true);
