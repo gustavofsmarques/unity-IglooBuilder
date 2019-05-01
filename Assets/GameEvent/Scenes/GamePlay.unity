@@ -7246,7 +7246,7 @@ MonoBehaviour:
   - {fileID: 1495617033}
   - {fileID: 1194682889}
   - {fileID: 1529273026}
-  score: 9
+  score: 0
   ready: {fileID: 1348870565}
 --- !u!4 &650015304
 Transform:

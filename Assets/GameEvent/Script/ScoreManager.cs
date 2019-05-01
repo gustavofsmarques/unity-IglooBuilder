@@ -21,7 +21,8 @@ public class ScoreManager : MonoBehaviour
     {
         for(int i=0 ; i <= iglooParts.Length; i++)
         {
-            if (score > i) {
+            if (score > i && score <= i)
+            {
                 iglooParts[i].SetActive(true);
             }  
         }
