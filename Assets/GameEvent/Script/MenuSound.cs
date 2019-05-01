@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MenuSound : MonoBehaviour
 {
 
-    public GameObject SoundUI, SoundPanel, play, credits, sound;
+    public GameObject SoundUI, SoundPanel, play, credits, sound, info;
 
     public void Pause()
     {
@@ -15,6 +15,7 @@ public class MenuSound : MonoBehaviour
         play.SetActive(false);
         credits.SetActive(false);
         sound.SetActive(false);
+        info.SetActive(false);
     }
 
     public void Resume()
@@ -24,6 +25,7 @@ public class MenuSound : MonoBehaviour
         play.SetActive(true);
         credits.SetActive(true);
         sound.SetActive(true);
+        info.SetActive(true);
     }
 
 }
