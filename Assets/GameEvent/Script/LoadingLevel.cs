@@ -30,7 +30,6 @@ public class LoadingLevel : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
             slider.value = progress;
             progressText.text = progress * 100f + "%";
-            Debug.Log(progress);
             yield return null;
                 
         }

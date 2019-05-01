@@ -13,10 +13,10 @@ public class IglooPoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && iglooEntry.activeSelf)
         {
-            SceneManager.LoadScene(newLevel);
             score = score + 1;
+            SceneManager.LoadScene(newLevel);
         }
        
     }
