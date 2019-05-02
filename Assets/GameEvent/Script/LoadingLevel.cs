@@ -17,7 +17,7 @@ public class LoadingLevel : MonoBehaviour
 
     }
 
-    IEnumerator loadAsync (int sceneIndex)
+    IEnumerator loadAsync(int sceneIndex)
     {
 
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
@@ -31,10 +31,11 @@ public class LoadingLevel : MonoBehaviour
             slider.value = progress;
             progressText.text = progress * 100f + "%";
             yield return null;
-                
+
         }
 
-
+    
     }
+
 
 }
