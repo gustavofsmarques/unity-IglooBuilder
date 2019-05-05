@@ -6,32 +6,26 @@ using UnityEngine.UI;
 
 public class MenuTutorial : MonoBehaviour
 {
-    public GameObject buttonplay, buttoninfo,credits,info,sound,infopainel;
+    public GameObject play, sound, credits, extra, tutorialPanel;
 
-    public void disableinfo( )
+    public void enterInfo()
     {
-        buttonplay.SetActive(true);
-        buttoninfo.SetActive(false);
-    }
-
-    public void enableinfo( )
-    {
-
-        buttonplay.SetActive(false);
-        buttoninfo.SetActive(true);
-
-
+        tutorialPanel.SetActive(true);
+        play.SetActive(false);
+        sound.SetActive(false);
+        credits.SetActive(false);
+        extra.SetActive(false);
+            
     }
 
     public void backInfo()
     {
-        buttonplay.SetActive(false);
-        buttoninfo.SetActive(false);
-        credits.SetActive(true);
+        tutorialPanel.SetActive(false);
+        play.SetActive(true);
         sound.SetActive(true);
-        info.SetActive(true);
-        infopainel.SetActive(false);
-       
+        credits.SetActive(true);
+        extra.SetActive(true);
+
     }
 
 }
