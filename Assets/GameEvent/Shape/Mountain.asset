@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Mountain
   m_EditorClassIdentifier: 
   m_Angles:
-  - m_Start: -20
+  - m_Start: -10
     m_End: 14
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 27afad5e6e6985c49a6d2746a3c54bd7, type: 3}
+    - {fileID: 21300000, guid: b58c0724c6c964041b9ebddf79387931, type: 3}
   m_FillTexture: {fileID: 0}
   m_CornerSprites:
   - m_CornerType: 0

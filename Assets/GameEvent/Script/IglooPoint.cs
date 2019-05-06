@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,32 +12,29 @@ public class IglooPoint : MonoBehaviour
     public GameObject iglooEntry;
     public Text scoretxt;
     public GameObject lvlDay;
-    public float lvlDelayStart = 2f;
     public bool doingSetup;
+    public Text dayscore;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && iglooEntry.activeSelf)
         {
             score = score + 1;
-            SceneManager.LoadScene(newLevel);
             lvlDay.SetActive(true);
+            StartCoroutine(WaitForIt(3));
 
         }
-       
-    }
-
-  
-
-    // Start is called before the first frame update
-    void Start()
-    {
+        IEnumerator WaitForIt(float waitTime)
+        {
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene(newLevel);
+        }
 
     }
-  
-    // Update is called once per frame
+
     void Update()
-    { 
+    {
+        dayscore.text = score.ToString();
         scoretxt.text = score.ToString();   
     }
     public void ResetScore()
