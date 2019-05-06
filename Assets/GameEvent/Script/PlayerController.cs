@@ -120,10 +120,10 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-      //  if (other.transform.tag == "MovingPlatform")
-      //  {
-      //      transform.parent = null;
-      //  }
+        if (other.transform.tag == "MovingPlatform")
+        {
+            transform.parent = null;
+        }
 
     }
 }

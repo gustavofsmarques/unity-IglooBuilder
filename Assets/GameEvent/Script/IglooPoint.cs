@@ -10,6 +10,9 @@ public class IglooPoint : MonoBehaviour
     private static int score = 0;
     public GameObject iglooEntry;
     public Text scoretxt;
+    public GameObject lvlDay;
+    public float lvlDelayStart = 2f;
+    public bool doingSetup;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,9 +20,13 @@ public class IglooPoint : MonoBehaviour
         {
             score = score + 1;
             SceneManager.LoadScene(newLevel);
+            lvlDay.SetActive(true);
+
         }
        
     }
+
+  
 
     // Start is called before the first frame update
     void Start()

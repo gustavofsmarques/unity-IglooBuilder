@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FrostyTxt
+  m_Name: ZoeAnimationText
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -53,12 +53,13 @@ AnimationClip:
   m_Events:
   - time: 0
     functionName: WriteText
-    data: "Frosty nasceu, sem ao menos saber quem era sua m\xE3e e seu pai, viveu
-      sua vida toda com sua av\xF3 que lhe ensinou por muito tempo a como sobreviver
-      a um ambiente gelado, gra\xE7as a isso Frosty v\xEA a sobreviv\xEAncia como
-      um esporte. Atrav\xE9s de gera\xE7\xE3o em gera\xE7\xE3o, Frosty que por sua
-      vez tamb\xE9m consegue construir iglus com facilidade, desde emt\xE3o frosty
-      vive construindo os maiores e mais belos iglus que ninguem nunca ja viu."
+    data: "Av\xF3 de Frosty quando foi jovem, era almirante da marinha que gostava
+      de navegar aos arredores do extremo norte. por ser birrenta, careta, ego\xEDsta
+      e muito raivosa, a tripula\xE7\xE3o inteira tinha medo dela; certo dia uma tempestade
+      muito forte e ensurdecedora, fez com  que o navio naufragasse; com exce\xE7\xE3o
+      dela, todos os tripulantes do navio morreram; muito ferida e com frio quase
+      a ponto de morrer no frio, foi resgatada por um homem que vivia no campo, desde
+      ent\xE3o Zoe vive todo o dia, nos frios g\xE9lidos do alaska."
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
