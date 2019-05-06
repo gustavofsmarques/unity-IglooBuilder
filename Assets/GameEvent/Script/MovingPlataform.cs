@@ -11,7 +11,6 @@ public class MovingPlataform : MonoBehaviour{
 
 
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +36,14 @@ public class MovingPlataform : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
-            Destroy(gameObject,0.2f);
+            foreach(var obj in GetComponents<Collider2D>() )
+            {
+                obj.enabled = false;
+  
+            }
             Destroy(this);
+
+            GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }
