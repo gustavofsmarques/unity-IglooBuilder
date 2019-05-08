@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float jumpHeight;
+    
 
     [SerializeField] private GameObject buttonsUI;
     [SerializeField] private GameObject gameoverUI;

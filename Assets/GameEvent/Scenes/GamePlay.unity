@@ -1035,7 +1035,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6289,8 +6289,8 @@ MonoBehaviour:
     type: 3}
   minPlatformSpaw: 2
   maxPlatformSpaw: 2.5
-  minSnowBallSpaw: 2.75
-  maxSnowBallSpaw: 3
+  minSnowBallSpaw: 1.25
+  maxSnowBallSpaw: 1.5
 --- !u!4 &294314337
 Transform:
   m_ObjectHideFlags: 0
@@ -7953,6 +7953,7 @@ MonoBehaviour:
   iglooParts:
   - {fileID: 1190768123}
   - {fileID: 183264336}
+  - {fileID: 1564898206}
   - {fileID: 1495617033}
   - {fileID: 1529273026}
   score: 0

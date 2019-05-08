@@ -20,6 +20,7 @@ public class SoundManager : MonoBehaviour {
     public AudioSource musicSource;                 //Drag a reference to the audio source which will play the music.
     public AudioSource gameMusic;
     public AudioSource storyMusic;
+   
 
     public bool story;
     public bool menu;
@@ -28,13 +29,13 @@ public class SoundManager : MonoBehaviour {
 
     public void mute()
     {
-        MuteSound.SetActive(true);
+        
         soundManager.SetActive(false);
     }
 
     public void desMute()
     {
-        desmute.SetActive(true);
+    
         soundManager.SetActive(true);
     }
 
@@ -52,8 +53,6 @@ public class SoundManager : MonoBehaviour {
         //Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
         DontDestroyOnLoad(gameObject);
     }
-
-  
 
     private void Update()
     {
@@ -93,9 +92,13 @@ public class SoundManager : MonoBehaviour {
                 game = false;
                 menu = true;
                 story = false;
+
             }
+         
         }
+        
     }
+
 
 
     //Used to play single sound clips.
