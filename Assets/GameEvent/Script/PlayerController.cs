@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.transform.tag == "MovingPlatform")
         {
+            
             transform.parent = null;
         }
 

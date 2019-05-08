@@ -8,8 +8,7 @@ public class MovingPlataform : MonoBehaviour{
     private float moveSpeed ;
     private Vector3 movement;
     private ScoreManager scoreManager;
-
-
+    
 
 
     // Start is called before the first frame update
@@ -37,8 +36,11 @@ public class MovingPlataform : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
-            Destroy(gameObject,0.2f);
+
+            Destroy(gameObject, 1.15f);
             Destroy(this);
+            
         }
+        
     }
 }
