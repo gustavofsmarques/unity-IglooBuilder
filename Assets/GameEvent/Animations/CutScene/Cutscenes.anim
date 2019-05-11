@@ -123,7 +123,7 @@ AnimationClip:
     messageOptions: 0
   - time: 40
     functionName: WriteText
-    data: "At\xE9 encontrado numa brilhante id\xE9ia em que poderia resolver o grande
+    data: "At\xE9 que encontrou uma brilhante id\xE9ia em que poderia resolver o grande
       problema da vida dele e de sua av\xF3, um na qual ele acredita que vai proteg\xEA-los
       da grande avalanche."
     objectReferenceParameter: {fileID: 0}

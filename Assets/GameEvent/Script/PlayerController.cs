@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class PlayerController : MonoBehaviour
 {
     //Movemente Variable
-    
+
     public float maxSpeed;
 
 
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheck;
     public float jumpHeight;
-    
+
 
     [SerializeField] private GameObject buttonsUI;
     [SerializeField] private GameObject gameoverUI;
@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        
+
 
 
         if (grounded && CrossPlatformInputManager.GetAxis("Jump") > 0)
@@ -102,30 +102,21 @@ public class PlayerController : MonoBehaviour
     {
         if (other.transform.tag == "Death")
         {
-            buttonsUI.SetActive(false);          
+            buttonsUI.SetActive(false);
             gameObject.SetActive(false);
             gameoverUI.SetActive(true);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.transform.tag == "MovingPlatform")
         {
-            transform.parent = other.transform;
+            //transform.parent = other.transform;
+            transform.position = new Vector3(other.transform.position.x, transform.position.y,transform.position.z);
         }
-
-       
-
     }
 
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.transform.tag == "MovingPlatform")
-        {
-            
-            transform.parent = null;
-        }
 
-    }
 }

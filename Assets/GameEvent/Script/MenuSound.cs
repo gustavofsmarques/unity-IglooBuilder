@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class MenuSound : MonoBehaviour
 {
 
-    public GameObject SoundUI, SoundPanel, play, credits, sound, extra;
+    public GameObject SoundUI, SoundPanel, play, credits, sound, extra, soundManager;
+
+
+
 
     public void Pause()
     {
@@ -28,6 +31,21 @@ public class MenuSound : MonoBehaviour
         sound.SetActive(true);
         extra.SetActive(true);
        
+    }
+
+    public void mute()
+    {
+
+        soundManager.SetActive(false);
+
+    }
+
+    public void desMute()
+    {
+
+
+        soundManager.SetActive(true);
+
     }
 
 }

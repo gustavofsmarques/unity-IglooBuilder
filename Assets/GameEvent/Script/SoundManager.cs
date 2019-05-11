@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SoundManager : MonoBehaviour {
 
 
-    public GameObject desmute ,MuteSound, soundManager;
+    
     public static SoundManager instance = null;     //Allows other scripts to call functions from SoundManager.             
     public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
     public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
@@ -27,17 +27,7 @@ public class SoundManager : MonoBehaviour {
     public bool game;
 
 
-    public void mute()
-    {
-        
-        soundManager.SetActive(false);
-    }
-
-    public void desMute()
-    {
     
-        soundManager.SetActive(true);
-    }
 
     void Awake()
     {

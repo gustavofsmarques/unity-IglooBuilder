@@ -8,6 +8,8 @@ public class MovingPlataform : MonoBehaviour{
     private float moveSpeed ;
     private Vector3 movement;
     private ScoreManager scoreManager;
+   
+   
     
 
 
@@ -36,11 +38,10 @@ public class MovingPlataform : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
-
-            Destroy(gameObject, 1.15f);
-            Destroy(this);
             
+            Destroy(this.gameObject, 0.25f);
+           
         }
         
-    }
+    } 
 }

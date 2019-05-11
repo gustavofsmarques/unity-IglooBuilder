@@ -6289,8 +6289,8 @@ MonoBehaviour:
     type: 3}
   minPlatformSpaw: 2
   maxPlatformSpaw: 2.5
-  minSnowBallSpaw: 1.25
-  maxSnowBallSpaw: 1.5
+  minSnowBallSpaw: 1.5
+  maxSnowBallSpaw: 2
 --- !u!4 &294314337
 Transform:
   m_ObjectHideFlags: 0
@@ -7951,9 +7951,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iglooParts:
+  - {fileID: 2053386972}
   - {fileID: 1190768123}
-  - {fileID: 183264336}
-  - {fileID: 1564898206}
+  - {fileID: 1259203346}
   - {fileID: 1495617033}
   - {fileID: 1529273026}
   score: 0
@@ -8014,7 +8014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherBorder: {fileID: 1981311412}
-  isRight: 0
+  isRight: 1
 --- !u!61 &685193122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8487,6 +8487,7 @@ GameObject:
   - component: {fileID: 827245997}
   - component: {fileID: 827245996}
   - component: {fileID: 827246000}
+  - component: {fileID: 827246001}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8535,7 +8536,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827245994}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8559,8 +8560,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 6784e3f6ade2e0048ba94f232ea85911, type: 2}
+  m_GravityScale: 0.75
+  m_Material: {fileID: 6200000, guid: 372aa3365a165a240ab41007aa81ca5c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -8630,9 +8631,35 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   groundCheck: {fileID: 506666099}
-  jumpHeight: 200
+  jumpHeight: 185
   buttonsUI: {fileID: 1194784732}
   gameoverUI: {fileID: 643734366}
+--- !u!61 &827246001
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827245994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.093800426, y: -0.12358093}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.92}
+    newSize: {x: 1.92, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.47628856, y: 1.6451416}
+  m_EdgeRadius: 0
 --- !u!1 &863795677
 GameObject:
   m_ObjectHideFlags: 0
@@ -10182,8 +10209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c3c865782347f41b6358d9fba14b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementRange: 50
-  axesToUse: 1
+  MovementRange: 30
+  axesToUse: 0
   horizontalAxisName: Horizontal
   verticalAxisName: Vertical
 --- !u!1 &1244300791
@@ -11553,12 +11580,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810f3def9d0f39b49975380dd1e233f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: GamePlay
+  newLevel: Gameplay
   iglooEntry: {fileID: 1529273026}
   scoretxt: {fileID: 1288754893}
   lvlDay: {fileID: 915787973}
   doingSetup: 1
-  dayscore: {fileID: 577955942}
+  dayscore: {fileID: 1288754893}
 --- !u!1 &1547710462
 GameObject:
   m_ObjectHideFlags: 0
@@ -12766,7 +12793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartUI: {fileID: 1720195519}
-  PauseMenu: {fileID: 948833705}
+  PauseMenu: {fileID: 34818015}
   Controlls: {fileID: 1194784732}
 --- !u!1 &1731377116
 GameObject:

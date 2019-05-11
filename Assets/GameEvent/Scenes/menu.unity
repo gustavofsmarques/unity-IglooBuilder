@@ -202,7 +202,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1779118409}
+      - m_Target: {fileID: 1863938846}
         m_MethodName: desMute
         m_Mode: 1
         m_Arguments:
@@ -8627,6 +8627,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677456622}
   m_CullTransparentMesh: 0
+--- !u!1 &1712086884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8173294381540919916, guid: 26a67a1a089f90b498e1c65eb154d5a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 8173294382246165284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1717334036
 GameObject:
   m_ObjectHideFlags: 0
@@ -8894,18 +8900,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772700719}
   m_CullTransparentMesh: 0
---- !u!114 &1779118409 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8173294381540919917, guid: 26a67a1a089f90b498e1c65eb154d5a0,
-    type: 3}
-  m_PrefabInstance: {fileID: 8173294382246165284}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a7271facda7a904093643e941641c76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1814024557
 GameObject:
   m_ObjectHideFlags: 0
@@ -9041,6 +9035,7 @@ MonoBehaviour:
   credits: {fileID: 1647285864}
   sound: {fileID: 1303330011}
   extra: {fileID: 354545978}
+  soundManager: {fileID: 1712086884}
 --- !u!114 &1863938847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9545,7 +9540,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1779118409}
+      - m_Target: {fileID: 1863938846}
         m_MethodName: mute
         m_Mode: 1
         m_Arguments:
@@ -9873,6 +9868,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8173294381540919917, guid: 26a67a1a089f90b498e1c65eb154d5a0,
+        type: 3}
+      propertyPath: desmute
+      value: 
+      objectReference: {fileID: 109070806}
+    - target: {fileID: 8173294381540919917, guid: 26a67a1a089f90b498e1c65eb154d5a0,
+        type: 3}
+      propertyPath: MuteSound
+      value: 
+      objectReference: {fileID: 1988623393}
     - target: {fileID: 8173294381540919912, guid: 26a67a1a089f90b498e1c65eb154d5a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9928,15 +9933,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8173294381540919917, guid: 26a67a1a089f90b498e1c65eb154d5a0,
-        type: 3}
-      propertyPath: desmute
-      value: 
-      objectReference: {fileID: 109070806}
-    - target: {fileID: 8173294381540919917, guid: 26a67a1a089f90b498e1c65eb154d5a0,
-        type: 3}
-      propertyPath: MuteSound
-      value: 
-      objectReference: {fileID: 1988623393}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a67a1a089f90b498e1c65eb154d5a0, type: 3}
