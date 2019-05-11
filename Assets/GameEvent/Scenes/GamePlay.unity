@@ -11585,7 +11585,7 @@ MonoBehaviour:
   scoretxt: {fileID: 1288754893}
   lvlDay: {fileID: 915787973}
   doingSetup: 1
-  dayscore: {fileID: 1288754893}
+  dayscore: {fileID: 577955942}
 --- !u!1 &1547710462
 GameObject:
   m_ObjectHideFlags: 0
