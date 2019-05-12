@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     public float jumpHeight;
 
 
-    [SerializeField] private GameObject buttonsUI;
+    [SerializeField] private GameObject jumpbutton, stickmove, pause;
     [SerializeField] private GameObject gameoverUI;
 
     // Start is called before the first frame update
@@ -102,7 +102,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.transform.tag == "Death")
         {
-            buttonsUI.SetActive(false);
+            pause.SetActive(false);
+            stickmove.SetActive(false);
+            jumpbutton.SetActive(false);
             gameObject.SetActive(false);
             gameoverUI.SetActive(true);
         }

@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class PausedMenu : MonoBehaviour
 {
 
-    public GameObject StartUI, PauseMenu, Controlls;
+    public GameObject StartUI, PauseMenu, jumpbutton, stickmove, pause;
 
     public void Pause()
     {
         Time.timeScale = 0;
         StartUI.SetActive(true);
-        Controlls.SetActive(false);
+        pause.SetActive(false);
+        stickmove.SetActive(false);
+        jumpbutton.SetActive(false);
+
 
     }
 
@@ -20,7 +23,9 @@ public class PausedMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         StartUI.SetActive(false);
-        Controlls.SetActive(true);
+        pause.SetActive(true);
+        jumpbutton.SetActive(true);
+        stickmove.SetActive(true);
     }
 
 }
