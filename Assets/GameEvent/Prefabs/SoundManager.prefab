@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8173294381422988077
 Transform:
@@ -144,7 +144,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8173294381540919912
 Transform:
@@ -367,9 +367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7271facda7a904093643e941641c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  desmute: {fileID: 0}
-  MuteSound: {fileID: 0}
-  soundManager: {fileID: 8173294381540919916}
   lowPitchRange: 0.95
   highPitchRange: 1.05
   actualScene: 
@@ -397,7 +394,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8173294381648154361
 Transform:
@@ -524,7 +521,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8173294382836174253
 Transform:

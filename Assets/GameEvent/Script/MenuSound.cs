@@ -33,18 +33,28 @@ public class MenuSound : MonoBehaviour
        
     }
 
-    public void mute()
+    public void Mute()
     {
+        if (soundManager == null)
+        {
+            soundManager = GameObject.Find("SoundManager");
+        }
 
         soundManager.SetActive(false);
+        
 
     }
 
-    public void desMute()
+    public void DesMute()
     {
-
-
-        soundManager.SetActive(true);
+        if(soundManager == null)
+        {
+            SoundManager.instance.makeActive();
+        }
+        else
+        {
+            soundManager.SetActive(true);
+        }
 
     }
 

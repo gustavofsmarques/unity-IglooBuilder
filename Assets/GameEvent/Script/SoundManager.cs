@@ -27,7 +27,10 @@ public class SoundManager : MonoBehaviour {
     public bool game;
 
 
-    
+    public void makeActive()
+    {
+        gameObject.SetActive(true);
+    }
 
     void Awake()
     {

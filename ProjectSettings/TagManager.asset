@@ -11,6 +11,7 @@ TagManager:
   - Play
   - Button
   - Paused
+  - SoundManager
   layers:
   - Default
   - TransparentFX
