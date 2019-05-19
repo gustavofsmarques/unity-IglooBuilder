@@ -6,19 +6,18 @@ using UnityEngine.UI;
 public class MenuSound : MonoBehaviour
 {
 
-    public GameObject SoundUI, SoundPanel, play, credits, sound, extra, soundManager;
-
-
+    public GameObject SoundUI, SoundPanel, play, sound, extra, soundManager,title;
+    
 
 
     public void Pause()
     {
-       
+        
         SoundUI.SetActive(true);
-        credits.SetActive(false);
         sound.SetActive(false);
         extra.SetActive(false);
         play.SetActive(false);
+        title.SetActive(false);
 
     }
 
@@ -27,10 +26,10 @@ public class MenuSound : MonoBehaviour
         
         SoundUI.SetActive(false);
         play.SetActive(true);
-        credits.SetActive(true);
         sound.SetActive(true);
         extra.SetActive(true);
-       
+        title.SetActive(true);
+
     }
 
     public void Mute()
@@ -41,7 +40,6 @@ public class MenuSound : MonoBehaviour
         }
 
         soundManager.SetActive(false);
-        
 
     }
 
@@ -57,5 +55,6 @@ public class MenuSound : MonoBehaviour
         }
 
     }
+ 
 
 }
