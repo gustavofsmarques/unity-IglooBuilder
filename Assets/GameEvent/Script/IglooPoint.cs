@@ -10,6 +10,7 @@ public class IglooPoint : MonoBehaviour
     [SerializeField] private string newLevel;
     private static int score = 0;
     public GameObject iglooEntry;
+    public GameObject RankingObj;
     public Text scoretxt;
     public GameObject lvlDay;
     public bool doingSetup;
@@ -37,8 +38,9 @@ public class IglooPoint : MonoBehaviour
         dayscore.text = score.ToString();
         scoretxt.text = score.ToString();   
     }
-    public void ResetScore()
+    public void ResetScore(Text player)
     {
+        RankingObj.GetComponent<RankingController>().CheckForHighScore(score, player.text);
         score = 0;
     }
 }
