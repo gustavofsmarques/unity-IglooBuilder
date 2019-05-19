@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class IglooPoint : MonoBehaviour
 {
-
     [SerializeField] private string newLevel;
     private static int score = 0;
     public GameObject iglooEntry;
@@ -15,6 +14,8 @@ public class IglooPoint : MonoBehaviour
     public GameObject lvlDay;
     public bool doingSetup;
     public Text dayscore;
+   
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -25,6 +26,8 @@ public class IglooPoint : MonoBehaviour
             StartCoroutine(WaitForIt(3));
 
         }
+        
+
         IEnumerator WaitForIt(float waitTime)
         {
             yield return new WaitForSeconds(3);
@@ -36,7 +39,8 @@ public class IglooPoint : MonoBehaviour
     void Update()
     {
         dayscore.text = score.ToString();
-        scoretxt.text = score.ToString();   
+        scoretxt.text = score.ToString();
+    
     }
     public void ResetScore(Text player)
     {

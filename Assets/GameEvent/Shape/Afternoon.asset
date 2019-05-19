@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
-  m_Name: Background
+  m_Name: Afternoon
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -13
     m_End: 14
     m_Order: 0
     m_Sprites:
-    - {fileID: 21300000, guid: 0c18a46470c447746a3725eef29aa08b, type: 3}
+    - {fileID: 21300000, guid: 76f7a5534424ff4458faa78b21afdc0b, type: 3}
   m_FillTexture: {fileID: 0}
   m_CornerSprites:
   - m_CornerType: 0
