@@ -31,5 +31,5 @@ EditorBuildSettings:
     guid: e11702edcfeda2d49b52ce11b4df1655
   - enabled: 1
     path: Assets/GameEvent/Scenes/Ranking.unity
-    guid: d5766daa41394464aa959c4354cb61c0
+    guid: bf1ea11f751c80e468dfc2a82f875a65
   m_configObjects: {}
